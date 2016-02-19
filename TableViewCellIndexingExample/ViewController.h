@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+{
+    NSArray *sectionDataArray;
+    NSArray *tableDataArray;
+}
+@property (weak, nonatomic) IBOutlet UITableView *mTableView;
 
 @end
 
